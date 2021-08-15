@@ -18,7 +18,7 @@ function variables() {
         TOOLCHAIN_DIR=DronaKernel/build/non-oc/toolchain
         KERNEL_DIR=DronaKernel/build/non-oc/kernel
         KERNEL_OUTPUT_DIR=workdir
-        KERNEL_DEFCONFIG=drona-rosy_defconfig
+        KERNEL_DEFCONFIG=ido_defconfig
         KERNEL_ARCH=arm64
     }
 
@@ -34,7 +34,7 @@ function variables() {
         anykernel() {
             essential_variables() {
                 AK_DIR=workdir/ak3
-                KERNEL_NAME=dronakernel
+                KERNEL_NAME=Dark-Knight
             }
             remote_variables() {
                 AK_REPO=https://github.com/shivamjadon/AnyKernel3
@@ -45,7 +45,7 @@ function variables() {
                 APPEND_DEVICE=0
                 APPEND_ANDROID_TARGET=0
                 APPEND_DATE=0
-                CUSTOM_ZIP_NAME=Drona-Kernel-Rosy-V4
+                CUSTOM_ZIP_NAME=Dark-Knight-ido-V4
             }
             essential_variables
             remote_variables
@@ -76,12 +76,12 @@ function variables() {
 
         kernel() {
             remote_variables() {
-                KERNEL_REPO=https://github.com/shivamjadon/Drona_Kernel_Rosy
-                KERNEL_BRANCH=q-caf
+                KERNEL_REPO=https://github.com/dev-msm8916/android_kernel_xiaomi_ido
+                KERNEL_BRANCH=11.x
             }
             options() {
-                KERNEL_BUILD_USER=shivam
-                KERNEL_BUILD_HOST=veronica
+                KERNEL_BUILD_USER=xvae
+                KERNEL_BUILD_HOST=root
                 KERNEL_LOCALVERSION=-3.18
             }
             remote_variables
