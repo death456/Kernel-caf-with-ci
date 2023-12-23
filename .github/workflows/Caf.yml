@@ -37,7 +37,7 @@ jobs:
             sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev repo rsync flex curl  bison aria2
        - name: Downloading script from remote repo
          run: |
-            wget https://raw.githubusercontent.com/$USERNAME/kernel-caf/master/script.sh
+            wget https://raw.githubusercontent.com/$USERNAME/kernel-caf-with-ci/master/script.sh
             bash script.sh
        - name: Uploading Image.gz-dtb & Ak3 zip
          run: |
